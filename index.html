@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Empatia: Conectando Pessoas</title>
+    <style>
+        /* RESET E CONFIGURAÇÕES GERAIS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* CABEÇALHO / HERO */
+        header {
+            background: linear-gradient(135deg, #6b5b95, #a28089);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* CONTAINER PRINCIPAL */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        /* SEÇÃO SOBRE */
+        .sobre {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 40px;
+        }
+
+        .sobre h2 {
+            color: #6b5b95;
+            margin-bottom: 15px;
+        }
+
+        /* CARDS DOS PILARES */
+        .pilares-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-top: 5px solid #a28089;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #6b5b95;
+            margin-bottom: 10px;
+        }
+
+        /* SEÇÃO DICAS PRÁTICAS */
+        .pratica {
+            background: #e8e4ec;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .pratica h2 {
+            color: #6b5b95;
+            margin-bottom: 15px;
+        }
+
+        .pratica ul {
+            list-style-type: none;
+        }
+
+        .pratica li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 12px;
+            font-size: 1.05rem;
+        }
+
+        .pratica li::before {
+            content: "♥";
+            position: absolute;
+            left: 0;
+            color: #a28089;
+            font-size: 1.2rem;
+        }
+
+        /* RODAPÉ */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <h1>O Poder da Empatia</h1>
+        <p>Aprender a olhar o mundo através dos olhos do outro.</p>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container">
+        
+        <!-- SEÇÃO INTRODUÇÃO -->
+        <section class="sobre">
+            <h2>O que é Empatia?</h2>
+            <p>Empatia é a capacidade de se colocar no lugar de outra pessoa, buscando compreender seus sentimentos, perspectivas e experiências sem julgamentos precoces. É a ponte que transforma o individualismo em conexão verdadeira e respeito mútuo.</p>
+        </section>
+
+        <!-- SEÇÃO DOS TRÊS PILARES -->
+        <section class="pilares-grid">
+            <div class="card">
+                <h3>1. Escuta Ativa</h3>
+                <p>Ouvir com atenção total ao invés de apenas planejar a sua resposta enquanto a outra pessoa fala.</p>
+            </div>
+            <div class="card">
+                <h3>2. Sem Julgamentos</h3>
+                <p>Aceitar as emoções alheias como válidas, mesmo quando as opiniões ou vivências forem diferentes das suas.</p>
+            </div>
+            <div class="card">
+                <h3>3. Ação Compassiva</h3>
+                <p>Transformar a compreensão em atitudes práticas para ajudar e acolher quem precisa.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO PRÁTICAS DIÁRIAS -->
+        <section class="pratica">
+            <h2>Como praticar a empatia no dia a dia?</h2>
+            <ul>
+                <li><strong>Faça perguntas abertas:</strong> Demonstre interesse real em como a pessoa se sente.</li>
+                <li><strong>Preste atenção à linguagem corporal:</strong> Muitas vezes, o tom de voz e o olhar dizem mais do que as palavras.</li>
+                <li><strong>Reconheça seus próprios preconceitos:</strong> Esteja consciente dos seus julgamentos automáticos para evitá-los.</li>
+                <li><strong>Ofereça apoio sem impor soluções:</strong> Às vezes, a pessoa só precisa de alguém que a escute, não de um conselho imediato.</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Projeto Empatia — Desenvolvido com HTML & CSS</p>
+    </footer>
+
+</body>
+</html>
